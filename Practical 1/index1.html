@@ -1,0 +1,145 @@
+<!-- Scenario: University Student Activity Management Portal
+
+A university wants to develop a Student Activity Management Portal where 
+students can view upcoming events, explore university activities and 
+register for events. You are assigned to develop the webpage based on a 
+given Figma design using semantic HTML and accessibility standards.
+
+Implementation Questions
+
+1. Develop the webpage structure using appropriate HTML5 semantic elements 
+   such as header, nav, main, section, article, aside and footer. Implement 
+   a proper heading hierarchy.
+
+2. Design an accessible student registration form containing text fields, 
+   dropdowns, radio buttons, checkboxes and a textarea. Ensure proper labels
+   and keyboard accessibility.
+
+3. Configure browser metadata, perform an accessibility audit using 
+   Lighthouse or WAVE, and initialise a Git repository with meaningful 
+   commits.
+
+Deliverables: Semantic HTML webpage, accessible registration form, 
+accessibility audit report and Git repository.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Activity Portal</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+
+<body>
+    <header>
+        <h1>University Student Activity Management Portal</h1>
+        <p>Upcoming Events, Explore University Activities and Register for Events</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#activities">Activities</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the University Portal</h2>
+            <p>Student Activity Management Portal where you can view 
+               upcoming events, explore university activities and register 
+               for events.</p>
+        </section>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <article>
+                <h3>SAMYAK</h3>
+                <p>Date: 28 November 2026</p>
+                <p>Annual Techno-Management Fest</p>
+            </article>
+            <article>
+                <h3>SURABHI</h3>
+                <p>Date: 10 January 2027</p>
+                <p>Annual International Cultural Fest</p>
+            </article>
+        </section>
+        <section id="activities">
+            <h2>University Activities</h2>
+
+            <ul>
+                <li>Sports Club Activities</li><br>
+                <li>NCC Activities</li><br>
+                <li>NSS Activities</li><br>
+                <li>Potography Activities</li><br>
+                <li>Thechnical Activities</li>
+            </ul>
+        </section>
+        <aside>
+            <p>It is mandatory for all the students to register for the upcoming University Events</p>
+        </aside>
+        <section id="register">
+            <h2>Student Registration Form</h2>
+
+            <form>
+                <label for="name">Student Name</label>
+                <input type="text" id="name" required>
+                <br><br>
+
+                <label for="id">University ID</label>
+                <input type="text" id="id" required>
+                <br><br>
+
+                <label for="department">Department</label>
+                <select name="department" id="department" required>
+                    <option value="" disabled selected>Select Department</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="IT">IT</option>
+                </select>
+                <br><br>
+
+                <label for="Study year">Year of study</label>
+                    <input type="radio" name="year" id="1">
+                    <label for="1st yr">First Year</label>
+                    <input type="radio" name="year" id="2">
+                    <label for="2nd yr">Second Year</label>
+                    <input type="radio" name="year" id="3">
+                    <label for="3rd yr">Third Year</label>
+                    <input type="radio" name="year" id="4">
+                    <label for="4th yr">Fourth Year</label>
+                <br><br>
+
+                <label for="event">Choose Interested Events</label>
+                <br>
+                <input type="checkbox" name="events">SAMYAK Technical Event
+                <br>
+                <input type="checkbox" name="events">SAMYAK Sports Event
+                <br>
+                <input type="checkbox" name="events">SURABHI Technical Event
+                <br>
+                <input type="checkbox" name="events">SURABHI Sports Event
+                <br><br>
+
+                <label for="message">Why do you want to participate</label>
+                <br>
+                <textarea name="message" id="message" rows="10" cols="20"></textarea>
+                <br><br>
+
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </form>    
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KL University</p>
+        <p>Mail: principal@kluniversity.in </p>
+    </footer>
+
+</body>
+
+</html>

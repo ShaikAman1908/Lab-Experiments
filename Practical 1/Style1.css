@@ -1,0 +1,118 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    color: #222;
+}
+
+header{
+    text-align: center;
+    background-color: maroon;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    min-height: 5vh;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+header p{
+    font-size: 15px;
+}
+
+nav{
+    background-color: yellowgreen;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: maroon;
+    color: white;
+}
+
+main{
+    margin: 0;
+    background-color: mediumseagreen;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin: 25px ;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+section h2{
+    color: maroon;
+    border-bottom: 2px solid yellowgreen;
+    padding-bottom: 10px;
+}
+
+article {
+    background-color: rgb(124, 212, 250);
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 10px solid maroon;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+article h3{
+    color: maroon;
+}
+
+aside {
+    background-color: #fff3cd;
+    color: #664d03;
+    margin: 25px;
+    padding: 15px;
+    border-left: 5px solid orange;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    background-color: maroon;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: yellowgreen;
+}
+
+footer {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

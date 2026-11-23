@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospital services, doctor information and patient appointment booking.">
+    <title>City Care Hospital | Patient Appointment Portal</title>
+    <link rel="stylesheet" href="Style 2.css">
+</head>
+
+<body>
+    <header>
+        <h1>City Care Hospital</h1>
+        <p>Quality Healthcare, Compassionate Care — Book Your Appointment Online</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#doctors">Our Doctors</a>
+        <a href="#appointment">Book Appointment</a>
+    </nav>
+
+    <main id="main-content">
+        <section id="home">
+            <h2 id="welcome-heading">Welcome to City Care Hospital</h2>
+            <p>We provide trusted medical care with experienced doctors, modern facilities and patient-friendly
+                services. Explore our departments and request an appointment below.</p>
+        </section>
+
+        <section id="services">
+            <h2 id="services-heading">Our Hospital Services</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>General Medicine</h3>
+                    <p>Consultations, routine health check-ups and treatment for common illnesses.</p>
+                </article>
+                <article class="card">
+                    <h3>Cardiology</h3>
+                    <p>Heart health consultations, diagnosis and ongoing cardiac care.</p>
+                </article>
+                <article class="card">
+                    <h3>Paediatrics</h3>
+                    <p>Healthcare and wellness services for infants, children and teenagers.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="doctors">
+            <h2 id="doctors-heading">Meet Our Doctors</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Dr. Ananya Rao</h3>
+                    <p><strong>Department:</strong> General Medicine</p>
+                    <p><strong>Availability:</strong> Monday - Friday</p>
+                </article>
+                <article class="card">
+                    <h3>Dr. Rahul Sharma</h3>
+                    <p><strong>Department:</strong> Cardiology</p>
+                    <p><strong>Availability:</strong> Tuesday - Saturday</p>
+                </article>
+                <article class="card">
+                    <h3>Dr. Meera Nair</h3>
+                    <p><strong>Department:</strong> Paediatrics</p>
+                    <p><strong>Availability:</strong> Monday - Saturday</p>
+                </article>
+            </div>
+        </section>
+
+        <aside class="notice">
+            Please submit the appointment form with accurate contact details. Our team will contact you to confirm your
+            appointment.
+        </aside>
+
+        <section id="appointment">
+            <h2 id="appointment-heading">Patient Appointment Form</h2>
+            <p>Fields marked with * are required.</p>
+
+
+
+            <div class="field">
+                <label for="patient-name">Full Name *</label>
+                <input type="text" id="patient-name" name="patientName" autocomplete="name" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="phone">Mobile Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dateOfBirth">
+            </div>
+            <br>
+            <div class="field">
+                <label for="department">Choose Department *</label>
+                <select id="department" name="department" required>
+                    <option value="">Select a department</option>
+                    <option>General Medicine</option>
+                    <option>Cardiology</option>
+                    <option>Paediatrics</option>
+                </select>
+            </div>
+            <br>
+            <div class="field">
+                <label for="doctor">Preferred Doctor</label>
+                <select id="doctor" name="doctor">
+                    <option value="">No preference</option>
+                    <option>Dr. Ananya Rao</option>
+                    <option>Dr. Rahul Sharma</option>
+                    <option>Dr. Meera Nair</option>
+                </select>
+            </div>
+            <br>
+            <div class="field">
+                <label for="date">Preferred Appointment Date *</label>
+                <input type="date" id="date" name="appointmentDate" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="time">Preferred Time *</label>
+                <select id="time" name="appointmentTime" required>
+                    <option value="">Select a time</option>
+                    <option>09:00 AM - 11:00 AM</option>
+                    <option>11:00 AM - 01:00 PM</option>
+                    <option>02:00 PM - 04:00 PM</option>
+                </select>
+            </div>
+            <br>
+            <label for="message">Appointment Type:</label>
+            <br>
+            <label class="choice">
+                <input type="radio" name="appointmentType">
+                New consultation
+            </label>
+            <br>
+            <label class="choice">
+                <input type="radio" name="appointmentType">
+                Follow-up visit
+            </label>
+            <br><br>
+            <div class="field full">
+                <label for="message">Reason for Visit</label>
+                <textarea id="message" name="message"
+                    placeholder="Briefly describe the reason for your visit (optional)."></textarea>
+                <p class="hint">Please do not enter emergency or highly sensitive medical information in this
+                    form.</p>
+            </div>
+            <br>
+            <div class="field full">
+                <label class="choice">
+                    <input type="checkbox" name="consent" required>
+                    I confirm that the information provided is correct. *
+                </label>
+            </div>
+            <br>
+            <div class="field full">
+                <button type="submit">Submit Appointment Request</button>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 City Care Hospital | Patient Appointment Portal</p>
+        <p>For emergencies, contact your local emergency service or visit the nearest emergency department.</p>
+    </footer>
+</body>
+</html>
