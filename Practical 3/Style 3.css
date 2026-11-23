@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -65,7 +66,7 @@ h2 {
 .restaurant {
     background-color: white;
     padding: 15px;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
 }
 
@@ -95,5 +96,3 @@ footer {
     text-align: center;
     padding: 15px;
 }
-
-
